@@ -93,7 +93,7 @@ function askQuestion() {
     for (var i = 0; i < choices.length; i++) {
       quizForm.innerHTML +=
         "<label id='radio'><input type='radio' name='radioOption' value='" +
-        choices[i] + "'/>" + choices[i] + "</label>";
+        choices[i] + "'/>" + choices[i] + "</label>" + "   ";
     }
     if (pointerQuestion == allQuestions.length - 1) {
       nextBtn.innerHTML = "End the Quiz";
