@@ -1,0 +1,160 @@
+/*  author: Denis Brisson  */
+
+body{
+  background-color: #2e548a;
+  font-family: 'Allerta Stencil';
+  height: 100%;
+}
+
+
+h1{
+  font-size: 52px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  border-radius: 25px;
+  background-color: #333333;
+  display: flex;
+  position:relative;
+  align-items: center;
+}
+
+
+.navbar a {
+  color: #e7e7e7;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items:center;
+}
+
+.navbar .brand {
+  display: block;
+  color: #e7e7e7;
+  padding: 0 24px;
+  font-size: 24px;
+}
+
+.navbar ul li a {
+  color: #e7e7e7;
+  padding: 24px;
+  display: block;
+}
+
+
+.navbar ul a:hover,
+.navbar ul a:focus,
+.navbar ul .active {
+  background-color: #272727;
+}
+
+
+.container{
+  color: white;
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height:100%;
+  padding: 10px;
+  text-align: center;
+  width: 85%;
+  height:100%;
+  background:  #2e548a;
+}
+
+.button {
+  background: #333333;
+  border: #333333;
+  color: white;
+  margin: 0;
+  top: 80%;
+  left: 50%;
+  font-family: 'Allerta Stencil';
+  font-size: 28px;
+  padding: 18px 32px;
+  border-radius: 25px;
+}
+
+div p {
+  font-size: 32px;
+}
+
+.button:hover:enabled {
+  border: 1px #272727;
+  color: white;
+  background: #272727;
+}
+
+/* this define the color of the button when it is disabled */
+.button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#radio {
+  font-size: 24px;
+}
+
+/* define a postion and a background color of the "congrats" div */
+#congrats {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e548a;
+}
+
+/* define a postion and a background size of the h2 elements within the "congrats" div */
+#congrats h2{
+  position: relative;
+  font: 'Allerta Stencil';
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #2e548a, #fff, #2e548a);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: finalAnimation 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+/* This element use the CSS keyframe rule to make the color move gradually  */
+@keyframes finalAnimation {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+span {
+  font-size: 35px;
+}
+
+#timer {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  margin-top:15%;
+  height:100px;
+  width: 100%;
+  text-align: center;
+}
