@@ -155,13 +155,14 @@ function showResults() {
     " in " + Math.floor(allSeconds / 60) + " minutes and " + allSeconds % 60 +
     " seconds !" + "</h1>";
   nextBtn.innerHTML = "View Answers";
-  if (correctOnes / allQuestions.length >= 0.5) {
+  if (correctOnes >= 5) {
     congratsDiv.innerHTML = "<h2>BRAVO</h2>";
-    // var claps = new Audio();
-    // claps.src = "./claps.wav";
-    // claps.preload = 'auto';
-  } else {
-    congratsDiv.innerHTML = "<h2>You can do better next time !</h2>";
+  } else if (correctOnes < 4) {
+    congratsDiv.innerHTML = "<h2>You can do better next time </h2>";
+  } else if (correctOnes === 0) {
+    congratsDiv.innerHTML = "<h2>Thats not good ...</h2>";
+  } else if (correctOnes === allQuestions.length) {
+    congratsDiv.innerHTML = "<h2>Impressive :0 </h2>";
   }
   nextBtn.onclick = function showAnswers() {
     quizForm.innerHTML = "   ";
