@@ -157,7 +157,7 @@ function showResults() {
   nextBtn.innerHTML = "View Answers";
   if (correctOnes >= 5) {
     congratsDiv.innerHTML = "<h2>BRAVO</h2>";
-  } else if (correctOnes < 4) {
+  } else if (correctOnes < 4 && correctOnes > 0) {
     congratsDiv.innerHTML = "<h2>You can do better next time </h2>";
   } else if (correctOnes === 0) {
     congratsDiv.innerHTML = "<h2>Thats not good ...</h2>";
