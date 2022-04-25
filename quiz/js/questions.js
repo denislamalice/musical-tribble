@@ -24,12 +24,12 @@ const allQuestions = [{
   question: "Bitcoin yearly electricity consumption is equivalent to Sweden's (131TWh), how about the global banking system ?",
   choices: ["100TWh", "260TWh", "150TWh", "200TWh"],
   correctAnswer: 1,
-  explanation: "260 TWh. The global banking system is an old institution which consumes a lot of energy, proportionnally the Bitcoin cryptocurrency consume much more due to its mining process ADD LINK !!!"
+  explanation: "260 TWh. The global banking system is an old institution which consumes a lot of energy, proportionnally the Bitcoin cryptocurrency consume much more due to its mining process"
 }, {
   question: "On average a standard email CO2 emmission is about 4g, how much for an email with attachments ? ",
   choices: ["50g", "10g", "25g", "10kg"],
   correctAnswer: 0,
-  explanation: "50g ... This might not initially seem like a lot, but when you consider the number of emails sent and received, it’s easy to see how this can add up. How many emails are resting in your mailbox ? Time to take action! You can start by deleting the ones you don't need and unsubscribe from email newsletters and other mailing list you don't read !"
+  explanation: "50g ... This might not initially seem like a lot, but when you consider the number of emails sent and received, it’s easy to see how this can add up. How many emails are resting in your mailbox ? Time to take action! You can start by deleting the ones you don't need and unsubscribe from email newsletters and other mailing list you don't need !"
 }, {
   question: "How much water is used to manufacture one laptop? (in litres)",
   choices: ["700", "190,000", "50,000", "4,000", "28,000"],
@@ -40,6 +40,21 @@ const allQuestions = [{
   choices: ["2y", "10y", "1y", "3y"],
   correctAnswer: 3,
   explanation: "3 years... Smartphones technology grows very fast, our phones become outdated while the manufacturers sell new model every year... Is there a solution against planned obsolescence? Have a look to 'Fairphones' ! "
+}, {
+  question: "On average how long does it take for metals components in a battery to decompose (years) ?",
+  choices: ["70", "10,000", "50", "100", "28"],
+  correctAnswer: 3,
+  explanation: "Generally, electronical components takes 100 years to degrade ! Crazy right ?"
+}, {
+  question: "What embedded device allows to save and have more control over your energy consumption ?",
+  choices: ["smart reader", "smart meter", "clever meter", "clever vaccum"],
+  correctAnswer: 1,
+  explanation: "Its Smart Meters, those small pieces of technology are game changers, from households to big buildings, companies like Oak Network bring data analytics to help you reduce your bills and carbon emission in one ! "
+}, {
+  question: "Up to how much energy LED bulbs can save compared to tradtional light bulbs ?",
+  choices: ["10%", "300%", "50%", "4%", "80%"],
+  correctAnswer: 4,
+  explanation: "80 %, the latest trend in energy-saving household items comes in the form of LED light bulbs. Compared to traditional light bulbs, they can save up to 80% of energy and provide significant savings on your electricity bills "
 }];
 
 // Declaring variables for later usage.
